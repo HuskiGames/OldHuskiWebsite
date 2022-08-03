@@ -4,47 +4,104 @@
         
         <style>
             body{
-                background: rgb(0, 0, 0);
+                background: #3D7068;
+                margin: 0;
+                padding: 0px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             }
-            header{
-                color: white;
+            .header{
+                height: 80px;
+                text-align: left;
+                color: #14453D;
+                font-size: 500%;
+                background-color: #3D7068;
+                transition: 500ms;
+
+            }
+            .header:hover{
+                color: black;
+                background-color: #14453D;
+            }
+            .headerRight{
+                float: right;
+            }
+            .Title{
+                color: #14453D;
                 text-align: center;
+                transition: 500ms;
                 font-size: 10vmax;
             }
-            #hi{
-                color: rgb(0, 0, 0);
-                margin-left: 5%;
-                margin-right: 5%;
-                margin-top: 10%;
-                background: rgb(255, 255, 255);
-                text-align: center;
-                font-size: 100%;
-                border-radius: 5px;
-                height: 20px;
+            .Title:hover{
+                color: black;
             }
-            #games{
-                color: rgb(0, 0, 0);
+            .MainText{
                 margin-left: 5%;
-                margin-right: 5%;
-                margin-top: 1%;
-                background: rgb(255, 255, 255);
-                text-align: center;
-                font-size: 100%;
+                align-self: center;
+                margin-right: 55%;
                 border-radius: 10px;
-                height: 366px;
+                font-size: 500%;
+                fill-opacity: 0;
+                height: 100px;
+
+                background: #E8E1EF;
+                transition: 1s;
+            }
+            .MainText:hover{
+                font-size: 1000%;
+                fill-opacity: 1;
+                margin-left: 0%;
+                margin-right: 0%;
+                height: 200px;
             }
 
         </style>
 
-        <header>Huski</header>
+        
 
-        <p id="hi">
-            Hello im Huski and I like to make games
-        </p>
+        <header class="header">
+            Huski 
+            <div class="headerRight">
 
-        <p id="games">
-            hi
-        </p>
+
+
+                <style>
+                    .twitter{
+                        object-fit:cover;
+                        border-radius:50%;
+                        height: 50px;
+                        margin: 10px;
+                        margin-right: 20px;
+                        color: #14453D;
+                    }
+                    .youtube{
+                        object-fit:cover;
+                        border-radius:50%;
+                        height: 50px;
+                        margin: 10px;
+                        margin-right: 0px;
+                        color: #14453D;
+                    }
+                </style>
+                
+                <a  href="https://www.youtube.com/channel/UCEB7tOtMtJsY8d3FVH7cQ4A" target="_blank">
+
+                    <img class="youtube" src="https://cdn2.hubspot.net/hubfs/521324/youtube%20icon.png" alt="Youtube">
+                </a>
+                <a  href="https://twitter.com/Huski_Games" target="_blank">
+
+                    <img class="twitter" src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="Twitter">
+                </a>
+
+                
+
+            </div>
+        </header>
+
+        <h1 class="Title"> Huski </h1>
+
+        <div class="MainText">hi</div>
+
+
 
     </body>
 </html>
